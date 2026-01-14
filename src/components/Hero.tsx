@@ -1,11 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Clock, Truck, Shield } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   return (
-    <section className="relative py-16 md:py-24 bg-gradient-to-b from-secondary to-background">
+    <section className="relative py-12 md:py-20 bg-gradient-to-b from-secondary to-background">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center">
+          {/* Large Centered Logo */}
+          <img 
+            src={logo} 
+            alt="2-Hour Mattress" 
+            className="w-72 md:w-96 mx-auto mb-8"
+          />
+          
           <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full mb-6 font-semibold">
             <Clock className="h-5 w-5" />
             Delivered in 2 Hours or It's FREE!
@@ -16,19 +24,19 @@ const Hero = () => {
             <span className="text-primary">Delivered Fast</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             Premium mattresses delivered to your door in just 2 hours. 
             No more waiting weeks – sleep better tonight.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="accent" size="xl">
-              Shop Mattresses
-            </Button>
-            <Button variant="outline" size="xl">
-              Call 818-MATTRES
-            </Button>
-          </div>
+          {/* Big Flashing BUY NOW Button */}
+          <Button 
+            variant="accent" 
+            size="xl" 
+            className="animate-pulse-glow text-xl px-16 py-8 h-auto mb-12"
+          >
+            BUY NOW
+          </Button>
           
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
