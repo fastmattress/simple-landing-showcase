@@ -44,10 +44,6 @@ const Hero = () => {
               Free 2-Hour Delivery
             </div>
             <div className="flex items-center gap-2">
-              <Shield className="h-5 w-5 text-primary" />
-              100-Night Trial
-            </div>
-            <div className="flex items-center gap-2">
               <Clock className="h-5 w-5 text-primary" />
               10-Year Warranty
             </div>
